@@ -23,9 +23,7 @@ $(document).ready(function() {
   
   function mainVid(id) {
     $('#video').html(`
-    <a href="https://www.youtube.com/watch_popup?v=${id}">
-    <img src="http://img.youtube.com/vi/${id}/maxresdefault.jpg" width="560" height="315">
-    </a>
+
          `);
     
   }
@@ -40,17 +38,20 @@ $(document).ready(function() {
       var vid = item.snippet.resourceId.videoId;
       
       $('main').append(`
+      <a href="https://www.youtube.com/watch_popup?v=${vid}" style="text-decoration: none; color: black;">
       <article class="item" data-key="${vid}"> 
-          <a href="https://www.youtube.com/watch_popup?v=${vid}">
-          <img src="${thumb}" class=o"thumb"/>
-          </a>
+         
+          <img src="${thumb}" class=o"thumb"/ width="250px">
+         
+          <br>
             <div class="details">
 
              <h4>${title}</h4>
-              <p>${desc}</p>
+             
             </div>
 
         </article>
+        </a>
      
     `);
     });
