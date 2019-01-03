@@ -22,7 +22,7 @@ $(document).ready(function() {
   
   function mainVid(id) {
     $('#video').html(`
-   <a href="https://www.youtube.com/watch?v=${id}" > <img src="http://img.youtube.com/vi/${id}/maxresdefault.jpg" width="560" height="315"/></a>
+   <a href="https://www.youtube.com/watch_popup?v=${id}" > <img src="http://img.youtube.com/vi/${id}/maxresdefault.jpg" width="560" height="315"/></a>
 
          `);
     
